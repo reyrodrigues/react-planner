@@ -59,7 +59,7 @@ export default function WallFactory(name, info, textures) {
       return element.selected ? React.createElement(
         'g',
         null,
-        React.createElement('rect', { x: '0', y: -half_thickness, width: length, height: thickness, style: STYLE_RECT_SELECTED }),
+        React.createElement('rect', { x: '0', y: 0, width: length, height: 1, style: STYLE_RECT_SELECTED }),
         React.createElement('line', { x1: length_5, y1: -half_thickness_eps, x2: length_5, y2: half_thickness_eps, style: STYLE_LINE }),
         React.createElement(
           'text',

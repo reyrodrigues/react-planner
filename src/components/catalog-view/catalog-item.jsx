@@ -142,11 +142,7 @@ export default class CatalogItem extends Component {
         onMouseLeave={e => this.setState({hover: false})}
       >
         <b style={ !hover ? STYLE_TITLE : STYLE_TITLE_HOVER }>{element.info.title}</b>
-        <div style={ STYLE_IMAGE_CONTAINER }>
-          <div style={{...( !hover ? STYLE_IMAGE: STYLE_IMAGE_HOVER ), backgroundImage: 'url(' + element.info.image + ')'}}>
-            { hover ? <IconAdd style={STYLE_PLUS_HOVER} /> : null }
-          </div>
-        </div>
+       
         <ul style={STYLE_TAGS}>
           {element.info.tag.map((tag, index) => <li style={STYLE_TAG} key={index}>{tag}</li>)}
         </ul>

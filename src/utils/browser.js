@@ -2,18 +2,22 @@ export function browserDownload(json) {
   let fileOutputLink = document.createElement('a');
 
   let filename = 'output' + Date.now() + '.json';
-  filename = window.prompt('Insert output filename', filename);
-  if (!filename) return;
+  // filename = window.prompt('Insert output filename', filename);
+  // if (!filename) return;
 
   let output = JSON.stringify(json);
-  let data = new Blob([output], {type: 'text/plain'});
-  let url = window.URL.createObjectURL(data);
-  fileOutputLink.setAttribute('download', filename);
-  fileOutputLink.href = url;
-  fileOutputLink.style.display = 'none';
-  document.body.appendChild(fileOutputLink);
-  fileOutputLink.click();
-  document.body.removeChild(fileOutputLink);
+  if (window.fileCallback) {
+    window.fileCallback(output)
+  }
+
+  // let data = new Blob([output], {type: 'text/plain'});
+  // let url = window.URL.createObjectURL(data);
+  // fileOutputLink.setAttribute('download', filename);
+  // fileOutputLink.href = url;
+  // fileOutputLink.style.display = 'none';
+  // document.body.appendChild(fileOutputLink);
+  // fileOutputLink.click();
+  // document.body.removeChild(fileOutputLink);
 }
 
 export function browserUpload() {
