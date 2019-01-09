@@ -240,7 +240,7 @@ export default {
     tag: ['furnishings', 'wood'],
     title: 'armchairs',
     description: 'armchairs',
-    image: require('./armchairs.png')
+    image: null
   },
 
   properties: {

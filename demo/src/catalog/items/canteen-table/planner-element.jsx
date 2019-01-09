@@ -335,7 +335,7 @@ export default {
     tag: ['furnishings', 'wood'],
     title: 'canteen table',
     description: 'canteen table',
-    image: require('./canteen_table.png')
+    image: null
   },
 
   properties: {

@@ -10,31 +10,31 @@ let info = {
 let textures = {
   parquet: {
     name: 'Parquet',
-    uri: require('./textures/parquet.jpg'),
+    uri: null,
     lengthRepeatScale: 0.004,
     heightRepeatScale: 0.004,
   },
   tile1: {
     name: 'Tile1',
-    uri: require('./textures/tile1.jpg'),
+    uri: null,
     lengthRepeatScale: 0.01,
     heightRepeatScale: 0.01,
   },
   ceramic: {
     name:'Ceramic Tile',
-    uri: require('./textures/ceramic-tile.jpg'),
+    uri: null,
     lengthRepeatScale: 0.02,
     heightRepeatScale: 0.02
   },
   strand_porcelain: {
     name:'Strand Porcelain Tile',
-    uri: require('./textures/strand-porcelain.jpg'),
+    uri: null,
     lengthRepeatScale: 0.02,
     heightRepeatScale: 0.02
   },
   grass: {
     name: 'Grass',
-    uri: require('./textures/grass.jpg'),
+    uri: null,
     lengthRepeatScale: 0.01,
     heightRepeatScale: 0.01,
   }

@@ -18,7 +18,7 @@ export default {
     tag: ['furnishings', 'wood', 'metal'],
     title: 'multimedia chalkboard',
     description: 'multimedia chalkboard',
-    image: require('./lim.png')
+    image: null
   },
 
   properties: {
@@ -127,7 +127,7 @@ export default {
     };
 
     let textureLoader = new Three.TextureLoader();
-    let etichettaImage = textureLoader.load(require('./example_lim.png'));
+    let etichettaImage = textureLoader.load(null;
 
     let geometryPlane = new Three.PlaneGeometry( 4,3);
     let material = new Three.MeshLambertMaterial( {map:etichettaImage, transparent: true} );

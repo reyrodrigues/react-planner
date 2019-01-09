@@ -747,7 +747,7 @@ export default {
     tag: ['metal','plastic'],
     title: 'cleaning cart',
     description: 'cleaning cart',
-    image: require('./cleaning_cart.png')
+    image: null
   },
 
   properties: {

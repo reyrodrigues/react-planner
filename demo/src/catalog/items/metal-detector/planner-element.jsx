@@ -18,8 +18,8 @@ function makeObjectMaxLOD() {
   let metalDetector = new Three.Mesh();
 
   let textureLoader = new Three.TextureLoader();
-  let display1= textureLoader.load(require('./display1.png'));
-  let display2= textureLoader.load(require('./display2.png'));
+  let display1= textureLoader.load(null;
+  let display2= textureLoader.load(null;
 
   let cubeGeometryBase = new Three.BoxGeometry(0.72,0.2,0.4);
   let up = new Three.Mesh(cubeGeometryBase,grey);
@@ -178,7 +178,7 @@ export default {
     tag: ['furnishings', 'metal'],
     title: "metal detector",
     description: "metal detector",
-    image: require('./metalDetector.png')
+    image: null
   },
   properties: {
     altitude: {

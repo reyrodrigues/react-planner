@@ -298,7 +298,7 @@ export default {
     tag: ['furnishings', 'metal'],
     title: "sink",
     description: "sink",
-    image: require('./sink.png')
+    image: null
   },
   properties: {
     width: {

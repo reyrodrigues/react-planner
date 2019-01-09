@@ -66,7 +66,7 @@ function makeObjectMaxLOD() {
   body.add(cylinder5);
 
   const textureLoader = new Three.TextureLoader();
-  const gageImage = textureLoader.load(require('./gage-image.png'));
+  const gageImage = textureLoader.load(null;
 
   const geometry2 = new Three.PlaneGeometry(0.04, 0.04);
   const material2 = new Three.MeshLambertMaterial({map: gageImage, transparent: true});
@@ -89,7 +89,7 @@ function makeObjectMaxLOD() {
   cylinder7.rotation.y += Math.PI / 2;
   body.add(cylinder7);
 
-  const labelImage = textureLoader.load(require('./label-image.png'));
+  const labelImage = textureLoader.load(null;
   labelImage.wrapS = Three.RepeatWrapping;
   labelImage.wrapT = Three.RepeatWrapping;
   labelImage.repeat.set(1, 1);
@@ -232,7 +232,7 @@ export default {
     tag: ['security'],
     title: "Fire extinguisher",
     description: "Fire extinguisher",
-    image: require('./fire-extinguisher.png')
+    image: null
   },
 
   properties: {

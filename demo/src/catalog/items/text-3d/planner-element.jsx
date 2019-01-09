@@ -16,7 +16,7 @@ export default {
     tag: ['text'],
     title: 'Text 3D',
     description: 'Text',
-    image: require('./img.png')
+    image: null
   },
 
   properties: {

@@ -21,7 +21,7 @@ export default {
     tag: ['furnishings'],
     title: "Teaching post",
     description: "Teaching post",
-    image: require('./teaching-post.png')
+    image: null
   },
 
   properties: {
@@ -106,7 +106,7 @@ export default {
       p6.position.z += 0.5 * 3 / 2;
       p6.position.x += 0.4;
 
-      let texture = new Three.TextureLoader().load(require('./wood.jpg'));
+      let texture = new Three.TextureLoader().load(null;
       let materialTexture = new Three.MeshLambertMaterial({map: texture});
 
       let roundedRectShape = new Three.Shape();
@@ -209,7 +209,7 @@ export default {
 
     let newAltitude = element.properties.get('altitude').get('length');
 
-    let texture = new Three.TextureLoader().load(require('./wood.jpg'));
+    let texture = new Three.TextureLoader().load(null;
     let materialTexture = new Three.MeshLambertMaterial({map: texture});
     let green = new Three.MeshBasicMaterial({color: 0x669966});
 

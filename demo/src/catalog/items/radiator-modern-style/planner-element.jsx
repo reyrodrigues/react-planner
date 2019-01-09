@@ -204,7 +204,7 @@ export default {
     tag: ['furnishings', 'metal'],
     title: "aluminum radiator",
     description: "aluminum radiator",
-    image: require('./ModernStyleRadiator.png')
+    image: null
   },
 
   properties: {

@@ -19,7 +19,7 @@ export default {
     title: 'door',
     tag: ['door'],
     description: 'Wooden door',
-    image: require('./door.png')
+    image: null
   },
 
   properties: {
@@ -121,9 +121,9 @@ export default {
       return Promise.resolve(onLoadItem(cached3DDoor.clone()));
     }
 
-    let mtl = require('./door.mtl');
-    let obj = require('./door.obj');
-    let img = require('./texture.jpg');
+    let mtl = null;
+    let obj = null;
+    let img = null;
 
     return loadObjWithMaterial(mtl, obj, path.dirname(img) + '/')
       .then(object => {

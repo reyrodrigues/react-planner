@@ -6,8 +6,8 @@ const DEPTH = 80;
 const HEIGHT = 180;
 
 const textureLoader = new Three.TextureLoader();
-const logoTexture = textureLoader.load(require('./logo.jpg'));
-const steelTexture = textureLoader.load(require('./steel.jpg'));
+const logoTexture = textureLoader.load(null;
+const steelTexture = textureLoader.load(null;
 const logoMaterial =  new Three.MeshLambertMaterial({map:logoTexture});
 const steel =  new Three.MeshLambertMaterial({map:steelTexture});
 
@@ -204,7 +204,7 @@ export default {
     tag: ['furnishings', 'metal'],
     title: "fridge",
     description: "fridge",
-    image: require('./fridge.png')
+    image: null
   },
 
   properties: {

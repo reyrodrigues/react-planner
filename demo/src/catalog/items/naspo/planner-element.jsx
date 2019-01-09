@@ -9,7 +9,7 @@ const red = new Three.MeshPhongMaterial({color: 0xAA0000} );
 const grey = new Three.MeshLambertMaterial({color:0xAAAAAA});
 const black = new Three.MeshLambertMaterial({color:0x000000});
 const textureLoader = new Three.TextureLoader();
-const frontTexture = textureLoader.load(require('./naspofront.png'));
+const frontTexture = textureLoader.load(null;
 
 const objectMaxLOD = makeObjectMaxLOD();
 const objectMiddleLOD = makeObjectMiddleLOD();
@@ -223,7 +223,7 @@ export default {
     tag: ['furnishings', 'metal'],
     title: "naspo",
     description: "naspo",
-    image: require('./naspo.png')
+    image: null
   },
   properties: {
     altitude: {

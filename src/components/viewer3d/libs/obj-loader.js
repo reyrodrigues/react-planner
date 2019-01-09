@@ -2,7 +2,7 @@
  * @author mrdoob / http://mrdoob.com/
  */
 
-let THREE = window.THREE || require('three');
+let THREE = window.THREE || null;
 let OBJLoader;
 
 OBJLoader = function (manager) {

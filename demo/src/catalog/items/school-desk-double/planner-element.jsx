@@ -21,7 +21,7 @@ export default {
     tag: ['furnishings'],
     title: "School desk double",
     description: "school desk double",
-    image: require('./school-desk-double.png')
+    image: null
   },
 
   properties: {
@@ -108,7 +108,7 @@ export default {
       p6.position.x += 0.4;
 
 //      material = new Three.MeshLambertMaterial({color: 0x9b8c75});
-      let texture = new Three.TextureLoader().load(require('./wood.jpg'));
+      let texture = new Three.TextureLoader().load(null;
       let materialTexture = new Three.MeshLambertMaterial({map: texture});
 
 
@@ -223,7 +223,7 @@ export default {
     let brown = new Three.MeshLambertMaterial({color: 0x9b8c75});
     let grey = new Three.MeshLambertMaterial({color: 0xd9d7d7});
 
-    let texture = new Three.TextureLoader().load(require('./wood.jpg'));
+    let texture = new Three.TextureLoader().load(null;
     let materialTexture = new Three.MeshLambertMaterial({map: texture});
 
 

@@ -13,7 +13,7 @@ export default {
     tag: ['furnishings'],
     title: "recycling bins",
     description: "Recycling-bins",
-    image: require('./recycling-bins.png')
+    image: null
   },
 
   properties: {
@@ -98,7 +98,7 @@ export default {
       etichetta.position.set(-.1, .8, 0);
       plane1.add(etichetta);
 
-      var texture = new Three.TextureLoader().load(require('./recycle.png'));
+      var texture = new Three.TextureLoader().load(null;
 
       var planeGeometry2 = new Three.PlaneGeometry(.5, .5);
       var planeMaterial2 = new Three.MeshLambertMaterial({map: texture, transparent: true});

@@ -2,7 +2,7 @@ import * as Three from 'three';
 import React from 'react';
 
 let textureLoader = new Three.TextureLoader();
-let mat=textureLoader.load(require('./copper.jpg'));
+let mat=textureLoader.load(null;
 let frameMaterial = new Three.MeshLambertMaterial({map:mat});
 
 function makeObjectMaxLOD(RADIUS,HEIGHT) {
@@ -72,7 +72,7 @@ export default {
     tag: ['structure'],
     title: 'round column',
     description: 'round column',
-    image: require('./column.png')
+    image: null
   },
 
   properties: {

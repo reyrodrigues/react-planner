@@ -134,7 +134,7 @@ export default {
     tag: ['furnishings', 'wood'],
     title: 'double school desk',
     description: 'double school desk',
-    image: require('./deskdouble.png')
+    image: null
   },
 
   properties: {

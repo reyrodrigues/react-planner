@@ -13,7 +13,7 @@ export default {
     tag: ['furnishings'],
     title: "Blackboard",
     description: "Blackboard",
-    image: require('./blackboard.png')
+    image: null
   },
 
   properties: {

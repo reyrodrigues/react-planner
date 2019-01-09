@@ -10,7 +10,7 @@ export default {
     title: 'cube',
     tag: ['demo'],
     description: 'Demo item',
-    image: require('./cube.png')
+    image: null
   },
 
   properties: {

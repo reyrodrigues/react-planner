@@ -8,7 +8,7 @@ function makeObjectMaxLOD(newWidth,newHeight,newDepth) {
   let electricalPanel = new Three.Mesh();
 
   let textureLoader = new Three.TextureLoader();
-  let mat = textureLoader.load(require('./texturePanel.png'));
+  let mat = textureLoader.load(null;
 
   let cubeGeometryBase = new Three.BoxGeometry(newWidth, newHeight, newDepth);
 
@@ -46,7 +46,7 @@ export default {
     tag: ['furnishings', 'metal'],
     title: "electric panel",
     description: "electric panel",
-    image: require('./electricalPanel.png')
+    image: null
   },
   properties: {
     width: {

@@ -354,7 +354,7 @@ export default {
     tag: ['security', 'metal'],
     title: 'camera',
     description: 'camera',
-    image: require('./camera.png')
+    image: null
   },
   properties: {
     altitude: {

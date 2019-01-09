@@ -6,10 +6,10 @@ const DEPTH  = 50;
 const HEIGHT = 50;
 
 const textureLoader = new Three.TextureLoader();
-const power    = textureLoader.load(require("./power.jpg" ));
-const black    = textureLoader.load(require("./black.jpg" ));
-const white    = textureLoader.load(require("./white.jpg" ));
-const keyboard = textureLoader.load(require("./keyboard.jpg" ));
+const power    = textureLoader.load(null;
+const black    = textureLoader.load(null;
+const white    = textureLoader.load(null;
+const keyboard = textureLoader.load(null;
 const blackMaterial = new Three.MeshLambertMaterial( { map:black} );
 
 const objectMaxLOD    = makeObjectMaxLOD();
@@ -151,7 +151,7 @@ export default {
     tag: ['furnishings'],
     title: "pc monitor",
     description: "pc monitor",
-    image: require('./monitorPC.png')
+    image: null
   },
 
   properties: {
