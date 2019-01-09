@@ -186,7 +186,7 @@ export default {
     tag: ['furnishings', 'metallo', 'plastic'],
     title: "hanger",
     description: "hanger",
-    image: require('./hanger.png')
+    image: null
   },
 
   properties: {

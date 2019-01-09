@@ -132,7 +132,7 @@ export default {
     tag: ['telecomunication'],
     title: "router Wifi",
     description: "router Wifi",
-    image: require('./routerWifi.png')
+    image: null
   },
   properties: {
     altitude: {

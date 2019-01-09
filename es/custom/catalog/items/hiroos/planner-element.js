@@ -3,7 +3,7 @@ import React from 'react';
 
 var cubeMaterial = new Three.MeshLambertMaterial({ color: 0x65696c });
 var textureLoader = new Three.TextureLoader();
-var frontTexture1 = textureLoader.load(require('./hiroosTexture.jpg'));
+var frontTexture1 = textureLoader.load(null);
 var newWidth = 175;
 var newDepth = 85;
 var newHeight = 195;
@@ -71,7 +71,7 @@ export default {
     tag: ['furnishings', 'metal'],
     title: "hiroos",
     description: "hiroos",
-    image: require('./hiroos.png')
+    image: null
   },
   properties: {
     patternColor: {

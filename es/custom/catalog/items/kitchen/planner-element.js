@@ -6,9 +6,9 @@ var DEPTH = 100;
 var HEIGHT = 80;
 
 var textureLoader = new Three.TextureLoader();
-var steel = textureLoader.load(require('./steel.jpg'));
-var darkSteel = textureLoader.load(require('./darksteel.jpg'));
-var logo = textureLoader.load(require('./logo.jpg'));
+var steel = textureLoader.load(null);
+var darkSteel = textureLoader.load(null);
+var logo = textureLoader.load(null);
 var steelTexture = new Three.MeshLambertMaterial({ map: steel });
 var darkSteelTexture = new Three.MeshLambertMaterial({ map: darkSteel });
 var logoTexture = new Three.MeshLambertMaterial({ map: logo });
@@ -354,7 +354,7 @@ export default {
     tag: ['furnishings', 'metal'],
     title: "kitchen",
     description: "kitchen",
-    image: require('./kitchen.png')
+    image: null
   },
 
   properties: {

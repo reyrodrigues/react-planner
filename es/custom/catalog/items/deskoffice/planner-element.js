@@ -2,9 +2,9 @@ import * as Three from 'three';
 import React from 'react';
 
 var textureLoader = new Three.TextureLoader();
-var white = textureLoader.load(require("./white.jpg"));
+var white = textureLoader.load(null);
 var whiteMaterial = new Three.MeshLambertMaterial({ color: 0x000000 });
-var wood = textureLoader.load(require("./wood.jpg"));
+var wood = textureLoader.load(null);
 var glassMaterial = new Three.MeshLambertMaterial({ color: 0xc6c6c6, transparent: true, opacity: .5 });
 
 function makeMonitor(newDepth) {
@@ -446,7 +446,7 @@ export default {
     tag: ['furnishings', 'wood'],
     title: "desk",
     description: "desk",
-    image: require('./desk.png')
+    image: null
   },
 
   properties: {

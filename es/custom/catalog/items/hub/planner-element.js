@@ -2,7 +2,7 @@ import * as Three from 'three';
 import React from 'react';
 
 var textureLoader = new Three.TextureLoader();
-var front = textureLoader.load(require('./front.png'));
+var front = textureLoader.load(null);
 var blackMaterial = new Three.MeshLambertMaterial({ color: 0x3d3d3d });
 
 function makeObjectMaxLOD(newWidth, newHeight, newDepth) {
@@ -45,7 +45,7 @@ export default {
     tag: ['furnishings', 'metal'],
     title: "hub",
     description: "hub",
-    image: require('./hub.png')
+    image: null
   },
   properties: {
     width: {

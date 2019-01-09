@@ -10,7 +10,7 @@ export default {
     title: "image",
     tag: ['image'],
     description: "Image",
-    image: require('./image.png')
+    image: null
   },
 
   properties: {

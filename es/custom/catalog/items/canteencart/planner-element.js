@@ -329,7 +329,7 @@ export default {
     tag: ['furnishings', 'metal'],
     title: 'canteen cart',
     description: 'canteen cart',
-    image: require('./canteen_cart.png')
+    image: null
   },
 
   properties: {

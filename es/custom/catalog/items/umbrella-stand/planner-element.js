@@ -6,7 +6,7 @@ var DEPTH = 40;
 var HEIGHT = 70;
 
 var textureLoader = new Three.TextureLoader();
-var Image = textureLoader.load(require('./bronze-texture.jpg'));
+var Image = textureLoader.load(null);
 var material = new Three.MeshLambertMaterial({ map: Image });
 
 var objectMaxLOD = makeObjectMaxLOD();
@@ -141,7 +141,7 @@ export default {
     tag: ['furnishings', 'metal'],
     title: "umbrella stand",
     description: "umbrella stand",
-    image: require('./umbrellaStand.png')
+    image: null
   },
   properties: {
     altitude: {

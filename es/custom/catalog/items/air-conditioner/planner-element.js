@@ -242,7 +242,7 @@ export default {
     tag: ['furnishings', 'metal'],
     title: 'air conditioner',
     description: 'air conditioner',
-    image: require('./air_conditioner.png')
+    image: null
   },
   properties: {
     altitude: {

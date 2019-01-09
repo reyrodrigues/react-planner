@@ -13,7 +13,7 @@ export default {
     tag: ['Window'],
     title: 'Venetian Blind Window',
     description: 'Venetian Blind Window',
-    image: require('./venetian.jpg')
+    image: null
   },
 
   properties: {
@@ -114,9 +114,9 @@ export default {
       return Promise.resolve(onLoadItem(cached3DWindow.clone()));;
     }
 
-    var mtl = require('./venetian.mtl');
-    var obj = require('./venetian.obj');
-    var img = require('./texture.png');
+    var mtl = null;
+    var obj = null;
+    var img = null;
 
     return loadObjWithMaterial(mtl, obj, path.dirname(img) + '/').then(function (object) {
       cached3DWindow = object;

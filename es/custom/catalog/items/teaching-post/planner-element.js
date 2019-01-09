@@ -21,7 +21,7 @@ export default {
     tag: ['furnishings'],
     title: "Teaching post",
     description: "Teaching post",
-    image: require('./teaching-post.png')
+    image: null
   },
 
   properties: {
@@ -108,7 +108,7 @@ export default {
       p6.position.z += 0.5 * 3 / 2;
       p6.position.x += 0.4;
 
-      var texture = new Three.TextureLoader().load(require('./wood.jpg'));
+      var texture = new Three.TextureLoader().load(null);
       var materialTexture = new Three.MeshLambertMaterial({ map: texture });
 
       var roundedRectShape = new Three.Shape();
@@ -208,7 +208,7 @@ export default {
 
     var newAltitude = element.properties.get('altitude').get('length');
 
-    var texture = new Three.TextureLoader().load(require('./wood.jpg'));
+    var texture = new Three.TextureLoader().load(null);
     var materialTexture = new Three.MeshLambertMaterial({ map: texture });
     var green = new Three.MeshBasicMaterial({ color: 0x669966 });
 

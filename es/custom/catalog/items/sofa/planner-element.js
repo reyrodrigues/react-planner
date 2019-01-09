@@ -5,9 +5,9 @@ import convert from 'convert-units';
 
 import React from 'react';
 
-var mtl = require('./sofa.mtl');
-var obj = require('./sofa.obj');
-var img = require('./texture.jpg');
+var mtl = null;
+var obj = null;
+var img = null;
 
 var width = { length: 180, unit: 'cm' };
 var depth = { length: 60, unit: 'cm' };
@@ -23,7 +23,7 @@ export default {
     title: 'sofa',
     tag: ['furnishings', 'leather'],
     description: 'Leather sofa',
-    image: require('./sofa.png')
+    image: null
   },
 
   properties: {},

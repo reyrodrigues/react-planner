@@ -9,7 +9,7 @@ var RADIUS = 10;
 var grey = new Three.MeshLambertMaterial({ color: 0xC0C0C0 });
 var black = new Three.MeshLambertMaterial({ color: 0x00000 });
 var textureLoader = new Three.TextureLoader();
-var woodTexture = textureLoader.load(require('./wood.jpg'));
+var woodTexture = textureLoader.load(null);
 
 var objectMaxLOD = makeObjectMaxLOD();
 var objectMinLOD = makeObjectMinLOD();
@@ -116,7 +116,7 @@ export default {
     tag: ['furnishings', 'wood', 'metal'],
     title: 'bench',
     description: 'bench',
-    image: require('./bench.png')
+    image: null
   },
 
   properties: {

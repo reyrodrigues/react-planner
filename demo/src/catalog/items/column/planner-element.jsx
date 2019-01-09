@@ -2,7 +2,7 @@ import * as Three from 'three';
 import React from 'react';
 
 let textureLoader = new Three.TextureLoader();
-let mat=textureLoader.load(null;
+let mat=textureLoader.load(null);
 let frameMaterial = new Three.MeshLambertMaterial({map:mat});
 
 function makeObjectMaxLOD(RADIUS,HEIGHT) {

@@ -127,7 +127,7 @@ export default {
     };
 
     let textureLoader = new Three.TextureLoader();
-    let etichettaImage = textureLoader.load(null;
+    let etichettaImage = textureLoader.load(null);
 
     let geometryPlane = new Three.PlaneGeometry( 4,3);
     let material = new Three.MeshLambertMaterial( {map:etichettaImage, transparent: true} );

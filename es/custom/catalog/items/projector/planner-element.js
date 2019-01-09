@@ -99,7 +99,7 @@ export default {
     tag: ['furnishings', 'wood', 'metal'],
     title: "projector",
     description: "projector",
-    image: require('./projector.png')
+    image: null
   },
 
   properties: {

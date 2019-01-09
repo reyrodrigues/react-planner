@@ -13,7 +13,7 @@ export default {
     title: "sash window",
     tag: ['window'],
     description: "Sash window",
-    image: require('./window.png')
+    image: null
   },
 
   properties: {
@@ -96,9 +96,9 @@ export default {
       return Promise.resolve(onLoadItem(cached3DWindow.clone()));
     }
 
-    var mtl = require('./sash-window.mtl');
-    var obj = require('./sash-window.obj');
-    var img = require('./texture.png');
+    var mtl = null;
+    var obj = null;
+    var img = null;
 
     return loadObjWithMaterial(mtl, obj, path.dirname(img) + '/').then(function (object) {
       cached3DWindow = object;

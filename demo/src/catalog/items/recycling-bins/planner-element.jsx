@@ -98,7 +98,7 @@ export default {
       etichetta.position.set(-.1, .8, 0);
       plane1.add(etichetta);
 
-      var texture = new Three.TextureLoader().load(null;
+      var texture = new Three.TextureLoader().load(null);
 
       var planeGeometry2 = new Three.PlaneGeometry(.5, .5);
       var planeMaterial2 = new Three.MeshLambertMaterial({map: texture, transparent: true});

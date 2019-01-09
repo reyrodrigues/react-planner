@@ -13,7 +13,7 @@ var black = new Three.MeshLambertMaterial({ color: 0x000000 });
 black.side = Three.DoubleSide;
 
 var textureLoader = new Three.TextureLoader();
-var quadro = textureLoader.load(require('./PanelTexture.png'));
+var quadro = textureLoader.load(null);
 
 var objectMaxLOD = makeObjectMaxLOD();
 var objectMiddleLOD = makeObjectMiddleLOD();
@@ -548,7 +548,7 @@ export default {
     tag: ['furnishings', 'metal'],
     title: "three-phase panel",
     description: "electric panel",
-    image: require('./threePhasePanel.png')
+    image: null
   },
   properties: {
     altitude: {

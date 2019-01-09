@@ -6,7 +6,7 @@ const DEPTH=40;
 const HEIGHT=70;
 
 const textureLoader = new Three.TextureLoader();
-const Image = textureLoader.load(null;
+const Image = textureLoader.load(null);
 const material = new Three.MeshLambertMaterial( {map:Image} );
 
 const objectMaxLOD = makeObjectMaxLOD();

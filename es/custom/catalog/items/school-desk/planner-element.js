@@ -21,7 +21,7 @@ export default {
     tag: ['furnishings'],
     title: "School desk",
     description: "School desk",
-    image: require('./school-desk.png')
+    image: null
   },
 
   properties: {
@@ -110,7 +110,7 @@ export default {
       p6.position.x += 0.4;
 
       // material = new Three.MeshLambertMaterial({color: 0x9b8c75});
-      var texture = new Three.TextureLoader().load(require('./wood.jpg'));
+      var texture = new Three.TextureLoader().load(null);
       var materialTexture = new Three.MeshLambertMaterial({ map: texture });
 
       var roundedRectShape = new Three.Shape();
@@ -222,7 +222,7 @@ export default {
     var grey = new Three.MeshLambertMaterial({ color: 0xd9d7d7 });
     var black = new Three.MeshLambertMaterial({ color: 0x000000 });
 
-    var texture = new Three.TextureLoader().load(require('./wood.jpg'));
+    var texture = new Three.TextureLoader().load(null);
     var materialTexture = new Three.MeshLambertMaterial({ map: texture });
 
     var newDepth = .5;

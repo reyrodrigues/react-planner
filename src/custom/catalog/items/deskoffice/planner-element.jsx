@@ -2,9 +2,9 @@ import * as Three from 'three';
 import React from 'react';
 
 const textureLoader = new Three.TextureLoader();
-const white = textureLoader.load(null;
+const white = textureLoader.load(null);
 const whiteMaterial = new Three.MeshLambertMaterial({color:0x000000});
-const wood = textureLoader.load(null;
+const wood = textureLoader.load(null);
 const glassMaterial = new Three.MeshLambertMaterial({color:0xc6c6c6,transparent: true, opacity:.5});
 
 function makeMonitor(newDepth)

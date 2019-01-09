@@ -202,7 +202,7 @@ export default {
     tag: ['furnishings', 'cast iron'],
     title: "cast iron radiator",
     description: "cast iron radiator",
-    image: require('./OldStyleRadiator.png')
+    image: null
   },
 
   properties: {

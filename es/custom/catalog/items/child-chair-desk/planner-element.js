@@ -13,7 +13,7 @@ export default {
     tag: ['furnishings', 'wood', 'metal'],
     title: 'child chair desk',
     description: 'child chair desk',
-    image: require('./chairDesk.png')
+    image: null
   },
 
   properties: {

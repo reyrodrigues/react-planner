@@ -12,7 +12,7 @@ export default {
     tag: ['furnishings'],
     title: "Trash",
     description: "Trash",
-    image: require('./trash.png')
+    image: null
   },
 
   properties: {

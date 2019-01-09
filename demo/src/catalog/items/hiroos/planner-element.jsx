@@ -3,7 +3,7 @@ import React from 'react';
 
 const cubeMaterial  = new Three.MeshLambertMaterial({color: 0x65696c});
 let textureLoader   = new Three.TextureLoader();
-let frontTexture1   = textureLoader.load(null;
+let frontTexture1   = textureLoader.load(null);
 let newWidth = 175;
 let newDepth = 85;
 let newHeight = 195;

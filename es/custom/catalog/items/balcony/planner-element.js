@@ -2,8 +2,8 @@ import * as Three from 'three';
 import React from 'react';
 
 var PI_2 = Math.PI / 2;
-var paintedtexture = require('./painted.jpg');
-var brickTexture = require('./bricks.jpg');
+var paintedtexture = null;
+var brickTexture = null;
 var scale = 100;
 
 var textureLoader = new Three.TextureLoader();
@@ -73,7 +73,7 @@ export default {
     tag: ['furnishings', 'metal'],
     title: 'balcony',
     description: 'balcony',
-    image: require('./balcony.png')
+    image: null
   },
   properties: {
     width: {

@@ -11,7 +11,7 @@ var boxMaterials2 = [grey, grey, grey, grey, grey, darkGrey];
 var boxMaterials3 = [grey, grey, grey, grey, darkGrey, grey];
 
 var textureLoader = new Three.TextureLoader();
-var lcdTexture = textureLoader.load(require('./monitor.png'));
+var lcdTexture = textureLoader.load(null);
 
 //dimensions
 var width = 258;
@@ -226,7 +226,7 @@ export default {
     tag: ['metal'],
     title: "schneider",
     description: "schneider",
-    image: require('./schneider.png')
+    image: null
   },
   properties: {
     patternColor: {

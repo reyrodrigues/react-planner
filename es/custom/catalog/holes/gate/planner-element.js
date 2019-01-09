@@ -10,7 +10,7 @@ export default {
     tag: ['gate'],
     title: 'gate',
     description: 'hole in the wall',
-    image: require('./gate.jpg')
+    image: null
   },
 
   properties: {

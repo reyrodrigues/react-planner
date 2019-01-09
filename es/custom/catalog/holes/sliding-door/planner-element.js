@@ -79,7 +79,7 @@ export default {
     tag: ['door'],
     title: 'sliding door',
     description: 'iron door',
-    image: require('./slidingDoor.png')
+    image: null
   },
 
   properties: {

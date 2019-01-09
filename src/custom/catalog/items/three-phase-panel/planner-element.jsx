@@ -13,7 +13,7 @@ const black = new Three.MeshLambertMaterial({color:0x000000});
 black.side=Three.DoubleSide;
 
 const textureLoader = new Three.TextureLoader();
-const quadro=textureLoader.load(null;
+const quadro=textureLoader.load(null);
 
 
 const objectMaxLOD = makeObjectMaxLOD();

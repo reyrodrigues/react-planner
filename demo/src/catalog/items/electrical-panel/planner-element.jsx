@@ -8,7 +8,7 @@ function makeObjectMaxLOD(newWidth,newHeight,newDepth) {
   let electricalPanel = new Three.Mesh();
 
   let textureLoader = new Three.TextureLoader();
-  let mat = textureLoader.load(null;
+  let mat = textureLoader.load(null);
 
   let cubeGeometryBase = new Three.BoxGeometry(newWidth, newHeight, newDepth);
 

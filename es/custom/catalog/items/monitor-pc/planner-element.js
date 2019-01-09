@@ -6,10 +6,10 @@ var DEPTH = 50;
 var HEIGHT = 50;
 
 var textureLoader = new Three.TextureLoader();
-var power = textureLoader.load(require("./power.jpg"));
-var black = textureLoader.load(require("./black.jpg"));
-var white = textureLoader.load(require("./white.jpg"));
-var keyboard = textureLoader.load(require("./keyboard.jpg"));
+var power = textureLoader.load(null);
+var black = textureLoader.load(null);
+var white = textureLoader.load(null);
+var keyboard = textureLoader.load(null);
 var blackMaterial = new Three.MeshLambertMaterial({ map: black });
 
 var objectMaxLOD = makeObjectMaxLOD();
@@ -142,7 +142,7 @@ export default {
     tag: ['furnishings'],
     title: "pc monitor",
     description: "pc monitor",
-    image: require('./monitorPC.png')
+    image: null
   },
 
   properties: {

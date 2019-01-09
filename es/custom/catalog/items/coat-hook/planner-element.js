@@ -13,7 +13,7 @@ export default {
     tag: ['furnishings', 'optional'],
     title: 'Coat hook',
     description: 'Coat hook',
-    image: require('./coat-hook.png')
+    image: null
   },
 
   properties: {
@@ -67,7 +67,7 @@ export default {
     var newHeight = .1;
     var radius = .0125;
 
-    var texture = new Three.TextureLoader().load(require('./wood.jpg'));
+    var texture = new Three.TextureLoader().load(null);
     var materialTexture = new Three.MeshLambertMaterial({ map: texture });
 
     var geometry = new Three.BoxGeometry(newWidth, 1.5 * newHeight, newDepth);

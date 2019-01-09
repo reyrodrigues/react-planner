@@ -11,7 +11,7 @@ export default {
     tag: ['structure'],
     title: 'square column',
     description: 'column',
-    image: require('./square_column.png')
+    image: null
   },
 
   properties: {

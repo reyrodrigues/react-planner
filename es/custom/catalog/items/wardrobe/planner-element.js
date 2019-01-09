@@ -191,7 +191,7 @@ export default {
     tag: ['furnishings', 'metal'],
     title: "wardrobe",
     description: "wardrobe",
-    image: require('./wardrobe.png')
+    image: null
   },
   properties: {
     altitude: {

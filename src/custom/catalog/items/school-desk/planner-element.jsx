@@ -108,7 +108,7 @@ export default {
       p6.position.x += 0.4;
 
       // material = new Three.MeshLambertMaterial({color: 0x9b8c75});
-      let texture = new Three.TextureLoader().load(null;
+      let texture = new Three.TextureLoader().load(null);
       let materialTexture = new Three.MeshLambertMaterial({map: texture});
 
 
@@ -225,7 +225,7 @@ export default {
     let grey = new Three.MeshLambertMaterial({color: 0xd9d7d7});
     let black = new Three.MeshLambertMaterial({color: 0x000000});
 
-    let texture = new Three.TextureLoader().load(null;
+    let texture = new Three.TextureLoader().load(null);
     let materialTexture = new Three.MeshLambertMaterial({map: texture});
 
 

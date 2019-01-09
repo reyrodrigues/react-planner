@@ -115,7 +115,7 @@ export default {
     tag: ['door'],
     title: 'double door',
     description: 'iron door',
-    image: require('./door_double.png')
+    image: null
   },
 
   properties: {

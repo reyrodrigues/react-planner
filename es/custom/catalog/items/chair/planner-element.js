@@ -251,7 +251,7 @@ export default {
     tag: ['furnishings', 'wood'],
     title: "chair",
     description: "chair",
-    image: require('./chair.png')
+    image: null
   },
 
   properties: {

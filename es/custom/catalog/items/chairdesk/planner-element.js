@@ -542,7 +542,7 @@ export default {
     tag: ['furnishings', 'wood'],
     title: "chairdesk",
     description: "office chair",
-    image: require('./chairdesk.png')
+    image: null
   },
 
   properties: {

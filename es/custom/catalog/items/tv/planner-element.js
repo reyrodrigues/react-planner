@@ -14,7 +14,7 @@ export default {
     title: "tv",
     tag: ['furnishing', 'electronics'],
     description: "LCD TV",
-    image: require('./tv.png')
+    image: null
   },
 
   properties: {
@@ -103,8 +103,8 @@ export default {
       return Promise.resolve(onLoadItem(cached3DTV.clone()));
     }
 
-    var mtl = require('./tv.mtl');
-    var obj = require('./tv.obj');
+    var mtl = null;
+    var obj = null;
 
     return loadObjWithMaterial(mtl, obj, '').then(function (object) {
       cached3DTV = object;

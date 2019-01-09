@@ -107,7 +107,7 @@ export default {
     tag: ['furnishings', 'metal'],
     title: "smoke detector",
     description: "smoke detector",
-    image: require('./smokeDetector.png')
+    image: null
   },
   properties: {
     altitude: {

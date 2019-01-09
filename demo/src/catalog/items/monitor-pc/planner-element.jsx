@@ -6,10 +6,10 @@ const DEPTH  = 50;
 const HEIGHT = 50;
 
 const textureLoader = new Three.TextureLoader();
-const power    = textureLoader.load(null;
-const black    = textureLoader.load(null;
-const white    = textureLoader.load(null;
-const keyboard = textureLoader.load(null;
+const power    = textureLoader.load(null);
+const black    = textureLoader.load(null);
+const white    = textureLoader.load(null);
+const keyboard = textureLoader.load(null);
 const blackMaterial = new Three.MeshLambertMaterial( { map:black} );
 
 const objectMaxLOD    = makeObjectMaxLOD();

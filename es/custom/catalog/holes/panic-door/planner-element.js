@@ -269,7 +269,7 @@ export default {
     tag: ['door'],
     title: 'panic door',
     description: 'iron door',
-    image: require('./panicDoor.png')
+    image: null
   },
 
   properties: {

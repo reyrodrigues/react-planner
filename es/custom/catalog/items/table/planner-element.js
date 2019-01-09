@@ -90,7 +90,7 @@ export default {
     tag: ['furnishings', 'wood'],
     title: "table",
     description: "table",
-    image: require('./table.png')
+    image: null
   },
 
   properties: {

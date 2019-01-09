@@ -9,7 +9,7 @@ const RADIUS = 10;
 const grey = new Three.MeshLambertMaterial({ color: 0xC0C0C0 });
 const black = new Three.MeshLambertMaterial({ color: 0x00000 });
 const textureLoader = new Three.TextureLoader();
-const woodTexture = textureLoader.load(null;
+const woodTexture = textureLoader.load(null);
 
 const objectMaxLOD = makeObjectMaxLOD();
 const objectMinLOD = makeObjectMinLOD();

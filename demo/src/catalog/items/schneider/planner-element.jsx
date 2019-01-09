@@ -12,7 +12,7 @@ let boxMaterials3 = [ grey, grey, grey, grey, darkGrey, grey];
 
 
 let textureLoader   = new Three.TextureLoader();
-let lcdTexture   = textureLoader.load(null;
+let lcdTexture   = textureLoader.load(null);
 
 //dimensions
 let width = 258;
