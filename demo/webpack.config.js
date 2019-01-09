@@ -83,19 +83,7 @@ module.exports = (env, self) => {
       })
     ],
     optimization: {
-      minimize: isProduction,
-      splitChunks: {
-        cacheGroups: {
-          default: false,
-          commons: {
-              test: /[\\/]node_modules[\\/]/,
-              name: 'vendor',
-              chunks: 'all',
-              minSize: 10000,
-              reuseExistingChunk: true
-          }
-        }
-      }
+      minimize: false,
     }
   };
 
