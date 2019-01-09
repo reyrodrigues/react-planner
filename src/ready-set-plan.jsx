@@ -1,19 +1,15 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import ContainerDimensions from "react-container-dimensions";
 import Immutable, { Map } from "immutable";
 import immutableDevtools from "immutable-devtools";
 import { createStore } from "redux";
 import { Provider } from "react-redux";
-
 import MyCatalog from "./custom/catalog/mycatalog";
+import PlannerReducer from "./reducers/reducer";
+import ReactPlanner from "./react-planner";
+import PlannerPlugins from "./plugins/export";
+import * as PlannerModels from "./models";
 
-import {
-  Models as PlannerModels,
-  reducer as PlannerReducer,
-  ReactPlanner,
-  Plugins as PlannerPlugins
-} from "react-planner"; //react-planner // react-planner
 
 //define state
 let AppState = Map({

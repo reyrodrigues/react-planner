@@ -138,18 +138,16 @@ var Toolbar = function (_Component) {
             } },
           React.createElement(FaPlus, null)
         )
-      }, {
-        index: 4, condition: true, dom: React.createElement(
-          ToolbarButton,
-          {
-            active: [MODE_3D_VIEW].includes(mode),
-            tooltip: translator.t('3D View'),
-            onClick: function onClick(event) {
-              return viewer3DActions.selectTool3DView();
-            } },
-          React.createElement(Icon3D, null)
-        )
-      }, {
+      },
+      // {
+      //   index: 4, condition: true, dom: <ToolbarButton
+      //     active={[MODE_3D_VIEW].includes(mode)}
+      //     tooltip={translator.t('3D View')}
+      //     onClick={event => viewer3DActions.selectTool3DView()}>
+      //     <Icon3D />
+      //   </ToolbarButton>
+      // },
+      {
         index: 5, condition: true, dom: React.createElement(
           ToolbarButton,
           {
@@ -160,18 +158,16 @@ var Toolbar = function (_Component) {
             } },
           [MODE_3D_FIRST_PERSON, MODE_3D_VIEW].includes(mode) ? React.createElement(Icon2D, { style: { color: alterateColor } }) : React.createElement(FaMousePointer, { style: { color: alterateColor } })
         )
-      }, {
-        index: 6, condition: true, dom: React.createElement(
-          ToolbarButton,
-          {
-            active: [MODE_3D_FIRST_PERSON].includes(mode),
-            tooltip: translator.t('3D First Person'),
-            onClick: function onClick(event) {
-              return viewer3DActions.selectTool3DFirstPerson();
-            } },
-          React.createElement(MdDirectionsRun, null)
-        )
-      }, {
+      },
+      // {
+      //   index: 6, condition: true, dom: <ToolbarButton
+      //     active={[MODE_3D_FIRST_PERSON].includes(mode)}
+      //     tooltip={translator.t('3D First Person')}
+      //     onClick={event => viewer3DActions.selectTool3DFirstPerson()}>
+      //     <MdDirectionsRun />
+      //   </ToolbarButton>
+      // },
+      {
         index: 7, condition: true, dom: React.createElement(
           ToolbarButton,
           {

@@ -165,15 +165,6 @@ var CatalogItem = function (_Component) {
           element.info.title
         ),
         React.createElement(
-          'div',
-          { style: STYLE_IMAGE_CONTAINER },
-          React.createElement(
-            'div',
-            { style: _extends({}, !hover ? STYLE_IMAGE : STYLE_IMAGE_HOVER, { backgroundImage: 'url(' + element.info.image + ')' }) },
-            hover ? React.createElement(IconAdd, { style: STYLE_PLUS_HOVER }) : null
-          )
-        ),
-        React.createElement(
           'ul',
           { style: STYLE_TAGS },
           element.info.tag.map(function (tag, index) {

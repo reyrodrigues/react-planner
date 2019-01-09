@@ -10,7 +10,7 @@ import MyCatalog from "./catalog/mycatalog";
 
 import ToolbarScreenshotButton from "./ui/toolbar-screenshot-button";
 
-import { ReadySetPlan } from "../../src/ready-set-plan"; //react-planner // react-planner
+import { ReadySetPlan } from "react-planner"; //react-planner // react-planner
 
 //render
 ReactDOM.render(<ReadySetPlan />, document.getElementById("app"));

@@ -98,8 +98,8 @@ var ReactPlanner = function (_Component) {
           props = _objectWithoutProperties(_props2, ['width', 'height', 'state', 'stateExtractor']);
 
       var contentW = width - toolbarW - sidebarW;
-      var toolbarH = height - footerBarH;
-      var contentH = height - footerBarH;
+      var toolbarH = height;
+      var contentH = height;
       var sidebarH = height - footerBarH;
 
       var extractedState = stateExtractor(state);
@@ -108,11 +108,9 @@ var ReactPlanner = function (_Component) {
         'div',
         { style: _extends({}, wrapperStyle, { height: height }) },
         React.createElement(Toolbar, _extends({ width: toolbarW, height: toolbarH, state: extractedState }, props)),
-        React.createElement(Content, _extends({ width: contentW, height: contentH, state: extractedState }, props, { onWheel: function onWheel(event) {
+        React.createElement(Content, _extends({ width: contentW + sidebarW, height: contentH, state: extractedState }, props, { onWheel: function onWheel(event) {
             return event.preventDefault();
-          } })),
-        React.createElement(Sidebar, _extends({ width: sidebarW, height: sidebarH, state: extractedState }, props)),
-        React.createElement(FooterBar, _extends({ width: width, height: footerBarH, state: extractedState }, props))
+          } }))
       );
     }
   }]);

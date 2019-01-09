@@ -1,4 +1,4 @@
-import {ElementsFactories} from 'react-planner';
+import * as ElementsFactories from '../../../../catalog/factories/export';
 
 let info = {
   title: 'area',

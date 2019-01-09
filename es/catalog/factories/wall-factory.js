@@ -49,7 +49,7 @@ export default function WallFactory(name, info, textures) {
       var length = Geometry.pointsDistance(x1, y1, x2, y2);
       var length_5 = length / 5;
 
-      var thickness = element.getIn(['properties', 'thickness', 'length']);
+      var thickness = 2; //element.getIn(['properties', 'thickness', 'length']);
       var half_thickness = thickness / 2;
       var half_thickness_eps = half_thickness + epsilon;
       var char_height = 11;
@@ -59,7 +59,7 @@ export default function WallFactory(name, info, textures) {
       return element.selected ? React.createElement(
         'g',
         null,
-        React.createElement('rect', { x: '0', y: 0, width: length, height: 1, style: STYLE_RECT_SELECTED }),
+        React.createElement('rect', { x: '0', y: -half_thickness, width: length, height: thickness, style: STYLE_RECT_SELECTED }),
         React.createElement('line', { x1: length_5, y1: -half_thickness_eps, x2: length_5, y2: half_thickness_eps, style: STYLE_LINE }),
         React.createElement(
           'text',
