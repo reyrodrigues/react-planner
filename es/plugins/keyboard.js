@@ -5,8 +5,7 @@ import { rollback, undo, remove, toggleSnap, copyProperties, pasteProperties, se
 export default function keyboard() {
 
   return function (store, stateExtractor) {
-
-    window.addEventListener('keydown', function (event) {
+    (window.floorplanWindow || window).addEventListener('keydown', function (event) {
 
       var state = stateExtractor(store.getState());
       var mode = state.get('mode');
@@ -75,7 +74,7 @@ export default function keyboard() {
       }
     });
 
-    window.addEventListener('keyup', function (event) {
+    (window.floorplanWindow || window).addEventListener('keyup', function (event) {
 
       var state = stateExtractor(store.getState());
       var mode = state.get('mode');

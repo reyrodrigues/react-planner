@@ -19,8 +19,7 @@ import {
 export default function keyboard() {
 
   return (store, stateExtractor) => {
-
-    window.addEventListener('keydown', event => {
+    (window.floorplanWindow || window).addEventListener('keydown', event => {
 
       let state = stateExtractor(store.getState());
       let mode = state.get('mode');
@@ -96,7 +95,7 @@ export default function keyboard() {
 
     });
 
-    window.addEventListener('keyup', event => {
+    (window.floorplanWindow || window).addEventListener('keyup', event => {
 
       let state = stateExtractor(store.getState());
       let mode = state.get('mode');
