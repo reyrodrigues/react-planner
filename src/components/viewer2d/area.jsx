@@ -58,7 +58,7 @@ export default function Area({layer, area, catalog}) {
 
     renderedAreaSize = (
       <text x="0" y="0" transform={`translate(${center[0]} ${center[1]}) scale(1, -1)`} style={STYLE_TEXT}>
-        {(areaSize / 10000 * 10.76391041671).toFixed(2)} sq ft
+        {(areaSize).toFixed(2)} sq ft
       </text>
     )
   }

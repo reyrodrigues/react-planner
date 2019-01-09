@@ -46,7 +46,7 @@ export default function Line({line, layer, scene, catalog}) {
 
   let renderedLine = catalog.getElement(line.type).render2D(line, layer);
   let renderedRuler = line.selected ?
-    <Ruler unit={scene.unit} length={length} transform={`translate(0, ${half_thickness + 10} )`}/> : null;
+    <Ruler unit={'ft'} length={length} transform={`translate(0, ${half_thickness + 10} )`}/> : null;
 
   return (
     <g
