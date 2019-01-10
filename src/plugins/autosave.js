@@ -1,7 +1,7 @@
 const localStorage = window.hasOwnProperty('localStorage') ? window.localStorage : false;
 import { loadProject } from '../actions/project-actions';
 
-const TIMEOUT_DELAY = 500;
+const TIMEOUT_DELAY = 100;
 
 let timeout = null;
 
@@ -13,6 +13,15 @@ export default function autosave(autosaveKey, delay) {
 
     if (!autosaveKey) return;
     if (!localStorage) return;
+
+
+    setInterval(() => {
+      var state = stateExtractor(store.getState());
+      localStorage.setItem(
+        "react-planner-state",
+        JSON.stringify(state.scene.toJS())
+      );
+    }, 200);
 
     //revert
     if (localStorage.getItem(autosaveKey) !== null) {
